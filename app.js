@@ -103,6 +103,10 @@ app.listen(8080,() =>{
     console.log("server is listening to port 8080");
 });
 
+app.get("/", (req,res) => {
+    res.redirect("/listings");
+});
+
 //home route
 // app.get("/", (req,res) => {
 //     res.send("Hi, I am root");
